@@ -54,7 +54,7 @@
 
 - name: Restore influxdb data
   shell: influxd restore --full influxdb_backup
-  args:
+  shell:
     chdir: /tmp
 
 - name: Start influxdb
