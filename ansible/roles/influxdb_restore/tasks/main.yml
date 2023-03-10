@@ -7,7 +7,6 @@
     state: present
 
 - name: download a file from azure storage
-  become: true
   include_role:
     name: azure-cloud-storage
     tasks_from: blob-download.yml
