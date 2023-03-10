@@ -53,7 +53,7 @@
   shell: "curl -XPOST http://localhost:8086/query --data-urlencode 'q=DROP DATABASE monitoring_events'"
 
 - name: Restore influxdb data
-  shell: influxd restore -database influxdb_backup
+  shell: influxd restore --full influxdb_backup
   args:
     chdir: /tmp
 
